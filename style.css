@@ -1,74 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
 
 *,
-::before,
-::after {
+*::before,
+*::after {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  font: inherit;
 }
 
 :root {
-  --primary-color: hsl(47, 88%, 63%);
-  --neutral-color1: hsl(0, 0%, 100%);
-  --neutral-color2: hsl(0, 0%, 50%);
-  --neutral-color3: hsl(0, 0%, 7%);
+  --font-family-default: "Figtree", sans-serif;
+  --clr-primary-1: hsl(47, 88%, 63%);
+  --clr-neutral-1: hsl(0, 0%, 100%);
+  --clr-neutral-2: hsl(0, 0%, 50%);
+  --clr-neutral-3: hsl(0, 0%, 7%);
 }
 
 body {
-  font-size: 16px;
-  font-family: "Figtree", sans-serif;
-  background-color: var(--primary-color);
-  height: 100vh;
+  font-family: var(--font-family-default);
+  font-size: 1rem;
+  min-height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0 1rem;
+  background-color: var(--clr-primary-1);
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .card-container {
-  margin: 0 auto;
-  border: 1px solid var(--neutral-color3);
-  background-color: var(--neutral-color1);
-  padding: 1.5rem 1.5rem 0;
-  border-radius: 25px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 8px 8px 0px 0px var(--neutral-color3);
+  background-color: var(--clr-neutral-1);
+  border: 1px solid;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 8px 8px 0px 0px var(--clr-neutral-3);
+  max-width: 21.25rem;
 }
 
-.img-hero {
-  width: 100%;
-  border-radius: 10px;
+.flex-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
 }
 
-.card-container > * {
-  margin-bottom: 1.3rem;
+.small-gap {
+  gap: 0.8rem;
 }
 
-.status {
-  background-color: var(--primary-color);
-  padding: 0.3rem 1rem;
-  display: inline-block;
-  font-weight: 800;
-  border-radius: 5px;
+.section-img {
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
-.publish-date {
-  font-size: 14px;
+.section-status {
+  font-size: 0.8rem;
 }
 
-.description {
-  color: var(--neutral-color2);
+.section-status h2 {
+  font-weight: 700;
+  background-color: var(--clr-primary-1);
+  border-radius: 0.2rem;
+  padding: 0.3rem 0.7rem;
+}
+
+.section-description {
+  color: var(--clr-neutral-2);
   line-height: 1.5rem;
 }
 
-.author {
+.section-description h1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--clr-neutral-3);
+}
+
+.flex-group {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-weight: 800;
 }
 
-.author img {
-  width: 2.5rem;
+.section-author {
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.author-avatar {
+  width: 2rem;
 }

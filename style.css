@@ -73,10 +73,15 @@ img {
   line-height: 1.5rem;
 }
 
-.section-description h1 {
+.section-title {
   font-weight: 700;
   font-size: 1.4rem;
   color: var(--clr-neutral-3);
+}
+
+.section-title:hover {
+  cursor: pointer;
+  color: var(--clr-primary-1);
 }
 
 .flex-group {

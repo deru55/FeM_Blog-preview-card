@@ -8,31 +8,29 @@
   </head>
   <body>
     <main>
-      <div class="card-container flex-flow">
-        <div class="section-img">
-          <img
-            src="assets/images/illustration-article.svg"
-            alt="illustration"
-          />
-        </div>
-        <div class="section-status flex-flow small-gap">
-          <h2>Learning</h2>
-          <p>Published 21 Dec 2023</p>
-        </div>
-        <div class="section-description flex-flow small-gap">
-          <h1 class="section-title">HTML & CSS foundations</h1>
-          <p>
-            These languages are the backbone of every website, defining
-            structure, content and presentation
-          </p>
-        </div>
-        <div class="section-author flex-group">
+      <div class="card flow">
+        <img
+          src="assets/images/illustration-article.svg"
+          alt="illustration"
+          class="card__image"
+          height="201"
+        />
+        <p class="card__status">Learning</p>
+        <p class="fs-sm">Published 21 Dec 2023</p>
+        <h2 class="card__title">
+          <a href="#">HTML & CSS foundations</a>
+        </h2>
+        <p class="text-neutral-2">
+          These languages are the backbone of every website, defining structure,
+          content and presentation.
+        </p>
+        <div class="card__author">
           <img
             src="assets/images/image-avatar.webp"
             alt="author-avatar"
-            class="author-avatar"
+            class="card__author__avatar"
           />
-          <p>Greg Hooper</p>
+          <p class="fw-bold">Greg Hooper</p>
         </div>
       </div>
     </main>

@@ -92,6 +92,7 @@ body {
 }
 
 .card__title {
+  width: max-content;
   font-size: var(--fs-heading);
   font-weight: 700;
   color: var(--clr-neutral-3);
